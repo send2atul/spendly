@@ -24,7 +24,7 @@
         </p>
         <div class="landing-hero-actions">
             <a href="{{ url_for('register') }}" class="landing-hero-btn">Create free account</a>
-            <a href="#" class="landing-hero-btn">See how it works</a>
+            <a href="#" class="landing-hero-btn" id="how-it-works-btn">See how it works</a>
         </div>
 
         <div class="landing-preview">
@@ -72,6 +72,19 @@
     </div>
 </section>
 
+<dialog class="video-modal" id="how-it-works-modal" aria-label="How Spendly works">
+    <div class="video-modal-content">
+        <button type="button" class="video-modal-close" aria-label="Close video">&times;</button>
+        <div class="video-modal-frame">
+            <iframe
+                data-src="https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1&rel=0"
+                title="How Spendly works"
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</dialog>
+
 <section class="features">
     <div class="features-inner">
         <div class="feature-card">
@@ -100,4 +113,8 @@
     </div>
 </section>
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/landing.js') }}"></script>
 {% endblock %}
