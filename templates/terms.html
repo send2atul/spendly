@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .terms-container { max-width: 720px; }
+    .terms-card h2 {
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        color: var(--ink);
+        margin: 2rem 0 0.75rem;
+    }
+    .terms-card h2:first-child { margin-top: 0; }
+    .terms-card p,
+    .terms-card ul { color: var(--ink-soft); margin-bottom: 0.75rem; }
+    .terms-card ul { padding-left: 1.25rem; }
+    .terms-card li { margin-bottom: 0.35rem; }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="auth-section">
+    <div class="auth-container terms-container">
+
+        <div class="auth-header">
+            <h1 class="auth-title">Terms and Conditions</h1>
+            <p class="auth-subtitle">Last updated: October 2026</p>
+        </div>
+
+        <div class="auth-card terms-card">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                By creating an account or using Spendly, you agree to these Terms and
+                Conditions. If you do not agree, please do not use the service.
+            </p>
+
+            <h2>2. Use of Service</h2>
+            <p>
+                Spendly is a personal expense tracking tool. You may use it to record,
+                categorise, and review your own expenses. You agree to:
+            </p>
+            <ul>
+                <li>Provide accurate information when creating your account.</li>
+                <li>Keep your login credentials secure and not share them with others.</li>
+                <li>Use the service only for lawful, personal purposes.</li>
+                <li>Not attempt to disrupt, overload, or gain unauthorised access to the service.</li>
+            </ul>
+
+            <h2>3. User Data</h2>
+            <p>
+                You own the expense data you enter into Spendly. We store it only to
+                provide the service to you and do not sell it to third parties. You may
+                request deletion of your account and associated data at any time.
+            </p>
+            <p>
+                Spendly is not a bank or financial institution and does not connect to
+                your bank accounts. All entries are added manually by you.
+            </p>
+
+            <h2>4. Limitations of Liability</h2>
+            <p>
+                Spendly is provided "as is" without warranties of any kind. The
+                summaries and reports it produces are for personal reference only and
+                are not financial, tax, or legal advice. To the fullest extent permitted
+                by law, we are not liable for any loss or damage arising from your use
+                of the service, including loss of data or decisions made based on it.
+            </p>
+
+            <h2>5. Changes to Terms</h2>
+            <p>
+                We may update these terms from time to time. When we do, we will revise
+                the "Last updated" date above. Continued use of Spendly after changes
+                take effect means you accept the updated terms.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
